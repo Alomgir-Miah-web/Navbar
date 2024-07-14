@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attractive Search Bar</title>
+<style>
+  /* Resetting default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+  }
+
+  /* Navbar styles */
+  .navbar {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #666;
+  }
+
+  .navbar .logo img {
+    height: 30px;
+    vertical-align: middle;
+  }
+  ul li{
+   display: flex;
+  }
+
+  .navbar .search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+  }
+  .display{
+    display: flex;
+    gap: 20px;
+  }
+  
+
+  .navbar input[type=text] {
+    padding: 10px 40px ;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 200px;
+    transition: width 0.4s ease-in-out, border-color 0.3s;
+    background-color: #f8f8f8;
+    outline: none;
+  }
+
+  .navbar input[type=text]:focus {
+    width: 250px;
+    border-color: #666;
+  }
+
+  .navbar input[type=text]::placeholder {
+    color: #999;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 16px;
+    color: #666;
+  }
+
+  .navbar button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .navbar button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#" class="logo"><img src="apple.png" alt="Logo"></a>
+ <ul class="display">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+ </ul>
+  <div class="search-bar">
+    <i class="fas fa-search search-icon"></i>
+    <input type="text" placeholder="Search..">
+    <button type="submit">Search</button>
+  </div>
+</div>
+
+<!-- Content area -->
+<div style="padding: 20px;">
+  <h2>Content Area</h2>
+  <p>This is where your main content will go.</p>
+</div>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</body>
+</html>
